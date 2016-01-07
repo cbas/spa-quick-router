@@ -7,7 +7,7 @@
     "prepublish": "npm run clean && npm run build",
     "clean": "rm -rf dist",
     "build": "mkdir -p dist && babel lib -o dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard && karma start --single-run"
   },
   "author": "Sebastiaan Deckers <seb@ninja.sg> https://ninja.sg",
   "license": "ISC",
@@ -16,6 +16,13 @@
     "babel-eslint": "^4.1.6",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
+    "babelify": "^7.2.0",
+    "karma": "^0.13.19",
+    "karma-browserify": "^4.4.2",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-mocha": "^0.2.1",
+    "karma-sinon-chai": "^1.1.0",
+    "mocha": "^2.3.4",
     "standard": "^5.4.1"
   },
   "standard": {
